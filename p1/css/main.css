@@ -1,0 +1,32 @@
+/******************
+
+default stylel rule set for CSS
+
+selector {
+  property: value;
+}
+
+******************/
+
+body {
+  background-color: #333333;
+  margin-top: 100px;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+p {
+  color: white;
+  text-align: center;
+}
+a {
+  color: tomato;
+}
+a:hover {
+  color: dodgerblue;
+}
