@@ -1,7 +1,8 @@
 body {
   background-color: #111111;
   color: whitesmoke;
-  font-family: sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
   margin: 50px;
 }
 h1 {
