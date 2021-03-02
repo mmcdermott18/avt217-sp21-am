@@ -1,3 +1,29 @@
-img {
-  max-width: 100%;
+body {
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 150px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* media query */
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+  h1 {
+    font-size: 72px;
+  }
+}
+@media screen and (max-width: 650px) {
+  body {
+    background-color: white;
+    color: black;
+  }
+  h1 {
+    font-size: 50px;
+  }
 }
