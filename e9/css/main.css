@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+main {
+  width: 132vw;
+  margin: -50px -15vw;
+}
+#p1 .shape1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin: -15px;
+  float: left;
+  opacity: .5;
+  border-radius: 50%;
+}
+#p1 .shape2 {
+  background-color: blue;
+  width: 50px;
+  height: 100px;
+  margin: -15px -7.5px;
+  float: left;
+  opacity: .5;
+  transform: rotate(20deg);
+  border: 5px solid black;
+}
+#p1 .shape3 {
+  background-color: yellow;
+  width: 25px;
+  height: 100px;
+  margin: -15px -3.75px;
+  float: left;
+  opacity: .5;
+}
+#p2 .shape1 {
+  width: 1000px;
+  height: 1000px;
+  margin: -200px -150px;
+  float: left;
+  opacity: .5;
+  transform: rotate(20deg);
+  border: 50px solid black;
+  border-radius: 50%;
+}
+#p2 .shape2 {
+  width: 1000px;
+  height: 1000px;
+  margin: -150px -150px;
+  float: left;
+  opacity: .5;
+  transform: rotate(20deg);
+  border: 50px solid black;
+}
+#p2 .shape3 {
+  width: 1000px;
+  height: 1000px;
+  margin: -150px -375px;
+  float: left;
+  opacity: .5;
+  border: 50px solid black;
+}
+.mSquare {
+  width: 100px;
+  height: 100px;
+  background-color: magenta;
+  border: 10px solid black;
+  margin: -15px;
+  opacity: .75;
+  float: left;
+  border-radius: 50%;
+}
+.ySquare {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 10px solid black;
+  margin: -15px;
+  opacity: .75;
+  float: left;
+  border-radius: 50%;
+}
+.cSquare {
+  width: 100px;
+  height: 100px;
+  background-color: cyan;
+  border: 10px solid black;
+  margin: -15px;
+  opacity: .75;
+  float: left;
+  border-radius: 50%;
+}
+.kSquare {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border: 10px solid black;
+  margin: -15px;
+  opacity: .75;
+  float: left;
+  border-radius: 50%;
+}

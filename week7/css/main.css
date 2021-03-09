@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+header, footer {
+  width: 50vw;
+  height: 100px;
+  background-color: black;
+  margin: 50px auto;
+}
+main {
+  width: 50vw;
+  /* background-color: white; */
+  margin: 50px auto;
+  display: flow-root;
+}
+.col {
+  width: 45%;
+  /* height: 400px; */
+  /* background-color: tomato; */
+  float: left;
+}
+.rMargin {
+  margin-left: 10%;
+}
+img {
+  width: 100%;
+}
+h2 {
+  margin-top: 0;
+}
+@media only screen and (max-width: 1000px) {
+  header, main, footer {
+    width: 80vw;
+  }
+  .col {
+    width: 100%;
+  }
+  .rMargin {
+    margin-left: 0;
+  }
+  h2 {
+    margin-top: 1em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header, main, footer {
+    width: 95vw;
+  }
+}
