@@ -5,6 +5,7 @@ body {
   font-family: 'Crimson Text', serif;
   font-weight: 400;
   line-height: 1.5;
+  color: #333333;
 }
 main {
   width: 70vw;
@@ -12,6 +13,11 @@ main {
 }
 hr {
   margin: 50px 0 25px;
+  border: none;
+  border-bottom: 2px solid tomato;
+}
+#about {
+  background-color: #ffd700;
 }
 
 /* image styles */
@@ -32,6 +38,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: dodgerblue;
 }
 h2 {
   font-size: 3.998rem;
@@ -59,6 +66,7 @@ p {
 }
 .large-text {
   font-size: 2rem;
+  line-height: 1.45;
 }
 .name {
   font-style: italic;
@@ -72,11 +80,14 @@ a, a:link, a:visited, a:active {
 a:hover {
   color: tomato;
 }
+a.img-link , a.img-link:link , a.img-link:visited , a.img-link:active  {
+  border: none;
+}
 
 /* button styles */
 button {
   outline: none;
-  border: 3px solid black;
+  border: 3px solid #333333;
   margin: 25px 0 0;
   padding: 3px 5px;
   background-color: white;
@@ -90,4 +101,25 @@ button a, button a:link, button a:visited, button a:active {
 }
 button a:hover {
   color: black;
+}
+
+/* media queries */
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: #333333;
+    color: #dddddd;
+  }
+  #dauphines {
+    background-color: dodgerblue;
+  }
+  h1 {
+    font-size: 2.65rem;
+    color: #dddddd;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .large-text {
+    font-size: 1.5rem;
+  }
 }
