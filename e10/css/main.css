@@ -1,0 +1,54 @@
+body {
+  /* background-color: dodgerblue; */
+  margin: 0;
+}
+.black {
+  width: 100px;
+  height: 100px;
+  background-color: #222222;
+  float: left;
+}
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  float: left;
+}
+.board {
+  width: 800px;
+  display: flow-root;
+}
+#columns {
+  width: 50vw;
+  margin: 100px auto 0;
+}
+header, nav, main, footer {
+  width: 100%;
+}
+header, nav, footer, .column {
+  background-color: rebeccapurple;
+}
+header {
+  height: 100px;
+  margin-bottom: 25px;
+}
+nav {
+  height: 25px;
+  margin-bottom: 25px;
+}
+main {
+  display: flow-root;
+}
+.column {
+  width: calc((100% - 50px) / 3);
+  height: 400px;
+  float: left;
+}
+.margins {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+footer {
+  height: 100px;
+  margin-top: 25px;
+}

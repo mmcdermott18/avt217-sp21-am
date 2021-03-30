@@ -1,0 +1,26 @@
+
+body {
+  height: 400vh;
+  background-image: linear-gradient(red, yellow);
+}
+.no-position {
+  width: 500px;
+  height: 400px;
+  background-color: blue;
+  margin: 100px 0 100px 300px;
+}
+.containing-element {
+  width: 500px;
+  height: 400px;
+  background-color: blue;
+  margin: 100px 0 100px 100px;
+  position: relative;
+}
+.absolute {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: gold;
+  top: 50px;
+  left: 50px;
+}
