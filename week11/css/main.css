@@ -55,6 +55,9 @@ h1 {
   font-size: 7rem;
   margin: 0;
 }
+h2 {
+  margin-top: 0;
+}
 .intro {
   font-size: 2rem;
 }
