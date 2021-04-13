@@ -92,3 +92,38 @@ footer {
   margin-bottom: 100px;
   float: left;
 }
+
+/* tennis styles */
+#tennis div {
+  box-sizing: border-box;
+}
+#tennis {
+  background-color: darkgreen;
+}
+.court {
+  width: 410px;
+  display: flow-root;
+  border: 5px solid white;
+  margin: 50px auto;
+}
+.singles {
+  width: 300px;
+  float: left;
+}
+.side, .top, .middle {
+  float: left;
+  background-color: green;
+  border: 5px solid white;
+}
+.side {
+  width: 50px;
+  height: 300px;
+}
+.top {
+  width: 300px;
+  height: 100px;
+}
+.middle {
+  width: 150px;
+  height: 200px;
+}

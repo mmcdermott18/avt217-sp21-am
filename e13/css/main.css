@@ -17,7 +17,7 @@ body {
   position: absolute;
   top: 50px;
   left: 100px;
-  animation: move 4s infinite;
+  animation: move 5s infinite;
 }
 .cockpit {
   width: 30%;
@@ -152,7 +152,7 @@ body {
   40%{
     top: -20px;
   }
-  69% {
+  60% {
     top: 0px;
   }
   80% {
