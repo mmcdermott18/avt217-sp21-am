@@ -1,0 +1,100 @@
+/* added to make math easier with widths and padding */
+* {
+  box-sizing: border-box;
+}
+/* getting rid of default body margins */
+body {
+  margin: 0;
+}
+/* changed to h3 to match html change */
+h3 {
+  /* width: 650px; */ /* width is not necessary, should just be the column width in this case */
+  /* margin-left: 55px; */ /* if this margin was to center the text, use text-align: center; */
+  text-align: center; /* added to center text */
+  font-size: 30px;
+  font-family: "Poppin";
+  font-style: italic;
+}
+.leftside {
+  width: 50%; /* changed from pixels (680px) to percentage (50%) to make it more naturally responsive */
+  float: left;
+  /* margin-left: 100px; */ /* removed and turned to padding */
+  padding: 50px 100px; /* to account for left margin and added some to the right to separate columns */
+  /* text-align: justify; */ /* justified type on the web is tough to control */
+  /* line-height: 25px; */ /* I would set line-height on the text elements and not universally like this */
+  font-family: "Poppin", sans-serif;
+}
+/* no image styles because it is becoming a background image */
+/* img {
+  width: 680px;
+  margin-left: 130px;
+} */
+.rightside h1{
+  /* width: 680px; */ /* no width necessary, same reason as above */
+  /* float: left; */ /* doesn't need to float because there is nothing floating around it */
+  /* top: 100px; */ /* not using positioning so not necessary */
+  /* left: 1010px; */ /* not using positioning so not necessary */
+  /* text-align: justify; */ /* since you have one word on a line it isn't going to justify */
+  font-size: 60px;
+  line-height: 90px; /* made this a little smaller for design purposes */
+  /* position: absolute; */ /* using padding and margins to put this where you want */
+}
+/* removing things for the same reason as above in the h1 */
+.rightside h2 {
+  /* width: 500px; */
+  /* float: left; */
+  /* top: 520px; */
+  /* left: 990px; */
+  /* text-align: justify; */
+  font-size: 20px;
+  line-height: 20px;
+  /* position: absolute; */
+}
+/* adding background image, float, and width for .rightside */
+.rightside {
+  width: 50%; /* match width so total is 100% */
+  float: right; /* float so it floats next to the right column but it is right instead of left so that it goes to the right edge of the page and the left column is floated left so it goes to the left edge of the page*/
+  padding: 150px 100px 250px 50px; /* padding to move the text away from the edges fo the div but still let the background image be large and fill the whole div */
+  background: url(../image/door.jpg) no-repeat top left; /* adding background image and letting it exist at the top left */
+  background-size: contain; /* contain so the whole background image is always shown as opposed to cover which would fill the div */
+}
+p {
+  line-height: 1.5; /* added back since I removed it from the leftside div above */
+}
+/* media queries */
+/* made max width bigger so change happens earlier (was 700px) */
+@media only screen and (max-width: 900px) {
+  /* not necessary */
+  /* body {
+    width: 50%;
+  } */
+  .leftside {
+    width: 100%; /* to get rid of columns now you can just adjust the width of this to 100% */
+    padding: 25px; /* adjusting for smaller widths */
+  }
+  /* changed to match above and html */
+  h3 {
+    /* width: 300px; */ /* not necessary */
+    /* font-size: 16px; */ /* doesn't really need to change */
+    /* margin-top: 230px; */ /* large margins mean there is probably a better way to do something */
+  }
+  /* removed because the image was removed */
+  /* img {
+    width: 400px;
+  } */
+  .rightside h1 {
+    /* font-size: 35px; */ /* doesn't really need to change */
+    /* line-height: 35px; */ /* doesn't really need to change */
+    /* left: 240px; */ /* removed because positioning was removed */
+    /* top: 510px; */ /* removed because positioning was removed */
+  }
+  .rightside h2 {
+    /* font-size: 15px; */ /* doesn't really need to change */
+    /* left: 210px; */ /* removed because positioning was removed */
+    /* top: 635px; */ /* removed because positioning was removed */
+  }
+  .rightside {
+    width: 100%;
+    padding: 50px 25px;
+  }
+}

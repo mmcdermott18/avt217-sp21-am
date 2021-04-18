@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppin";
+  font-style: italic;
+}
+.leftside {
+  width: 50%;
+  float: left;
+  padding: 50px 100px;
+  font-family: "Poppin", sans-serif;
+}
+.rightside h1{
+  font-size: 60px;
+  line-height: 90px;
+}
+.rightside h2 {
+  font-size: 20px;
+  line-height: 20px;
+}
+.rightside {
+  width: 50%;
+  float: right;
+  padding: 150px 100px 250px 50px;
+  background: url(../image/door.jpg) no-repeat top left;
+  background-size: contain;
+}
+p {
+  line-height: 1.5;
+}
+@media only screen and (max-width: 900px) {
+  .leftside {
+    width: 100%;
+    padding: 25px;
+  }
+  .rightside {
+    width: 100%;
+    padding: 50px 25px;
+  }
+}
