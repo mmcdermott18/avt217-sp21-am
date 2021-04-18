@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box; /* There was an extra colon here that was breaking this declaration */
+}
+
+body{
+  margin: 0;
+  background-color: rgb(247,255,242);
+}
+.sideright{
+  width: 60%; /* changed width from fixed pixel (800px) to percentage to make it easy to view on any screen size */
+  /* height:3600px; */ /* A height in this situation is unnecessary and made the sideright column much longer than the content. When you have content in a div it doesn't need a height*/
+  /* position: relative; */ /* not necessary */
+  /* margin-top: 0px; */
+  /* margin-left: 700px; */
+  background-color: rgb(205,230,190);
+  padding: 20px 100px; /* changed padding to account for the removed margins below */
+  float: left; /* added a float so that the column sits next to the image*/
+}
+img{
+  float: left;
+  /* height: 700px; */ /* heights are rarely necessary, widths are the most common dimension we want to set*/
+  width: 40%; /* added a width and used the remaining 40% so the image width plus the column width equals 100%*/
+}
+h1{
+  /* margin-top: 150px; */
+  /* margin-left: 120px; */ /* removed the margins because the padding on the columns is accomplishing this in a better way */
+  margin-bottom: 0; /* added to make the h3 below closer which you were accomplishing with the negative margin on the h3. This is a better way. */
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 700;
+  /* font-style: normal; */ /* this is the default value and not necessary */
+  color: rgb(79,120,72);
+  font-size: 140px;
+  line-height: 120px; /* changed from pt to px for consistency*/
+}
+/* none of the h2 css is necessary because you don't have an h2 element in your html file */
+/* h2 {
+  margin: 0px;
+  margin-left: 120px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(79,120,72);
+  font-size: 140px;
+  font-style: normal;
+} */
+h3{
+  /* float: left; */ /* no reason to float this */
+  margin-top: 0; /* big margins, especially negative numbers (this was -100px) can probably be solved in a better way. In this case it is removing the bottom margin from the h1 and making this 0 */
+  font-size: 40px;
+  /* margin-left: 120px; */ /* same reason as removing the left margin on the h1 */
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 300;
+  color: rgb(79,120,72);
+}
+
+p{
+  text-indent: 40px; /* if you want a text indent you need to set the bottom and top margin to zero and account for the fact that the first paragraph should not be indented */
+  margin-bottom: 0; /* removed to account for the text indent */
+  margin-top: 0; /* use a bottom margin on the element above (h3 in this case) to move the first paragraph down and set to 0 because of the text indent */
+  /* margin-left: 130px; */
+  /* margin-right: 130px; */ /* removed both margins because the padding on the div is doing this work */
+  font-size: 21px; /* probably a little big but okay */
+  line-height: 1.45; /* added a line-height to make the text a little more open */
+  color: rgb(79,120,72);
+}
+/* added class to remove first paragraph text indent because the first paragraph of text is not indented */
+.first-p {
+  text-indent: 0;
+}
+/* This media query isn't really making this responsive, it is just changing the background colors. You probably also want to adjust the type sizes as it gets smaller because the large type is going off the window */
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: black;
+  }
+  /* added image styles to adjust width for responsiveness */
+  img {
+    width: 100%; /* width changed to 100% so it takes up the whole page */
+  }
+  .sideright{
+    background-color: black;
+    width: 100%; /* width changed to 100% so it takes up the whole page */
+    padding: 20px; /* made padding smaller so that the text column width is wider */
+  }
+  p{
+    color: white;
+  }
+}
