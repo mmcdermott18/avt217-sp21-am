@@ -1,129 +1,209 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  /* background-color: dodgerblue; */
   margin: 0;
 }
 
-/* checkerboard layout */
-
-.black {
-  width: 100px;
-  height: 100px;
-  background-color: #222222;
-  float: left;
-}
-.red {
-  width: 100px;
-  height: 100px;
-  background-color: tomato;
-  float: left;
-}
+/* checkerboard layout styles */
 .board {
   width: 800px;
   display: flow-root;
-}
+  margin: 50px auto 0;
 
-/* column layout */
+  /* the below is the same as the above */
 
-#columns {
-  width: 50vw;
-  margin: 100px auto 0;
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 0; */
 }
-#columns header, nav, main, footer {
-  width: 100%;
-}
-#columns header, nav, footer, .column {
-  background-color: rebeccapurple;
-}
-header {
+.red, .black {
+  width: 100px;
   height: 100px;
-  margin-bottom: 25px;
+  float: left;
 }
-nav {
+.red {
+  background-color: tomato;
+}
+.black {
+  background-color: #333333;
+}
+
+/* column layout styles */
+
+#col header, .subhead, .column, #col footer {
+  background-color: dodgerblue;
+}
+#col header, #col footer {
+  width: 800px;
+  height: 100px;
+  margin: 25px auto;
+}
+.subhead {
+  width: 800px;
   height: 25px;
-  margin-bottom: 25px;
+  margin: 0 auto;
 }
-main {
+#col main {
+  width: 800px;
+  margin: 25px auto;
   display: flow-root;
 }
 .column {
-  width: calc((100% - 50px) / 3);
+  width: 250px;
+  height: 600px;
+  float: left;
+}
+.center-margin {
+  margin: 0 25px;
+}
+
+/* blog layout styles */
+img {
+  width: 100%;
+}
+#blog header, .content, .avatar, .byline {
+  background-color: #333333;
+}
+#blog header {
+  width: 800px;
+  height: 100px;
+  margin: 25px auto 50px;
+}
+#blog main {
+  width: 800px;
+  margin: 0 auto;
+}
+.post {
+  margin: 0 0 50px;
+  display: flow-root;
+}
+.content {
+  width: 600px;
   height: 400px;
   float: left;
 }
-.margins {
-  margin-left: 25px;
-  margin-right: 25px;
-}
-footer {
-  height: 100px;
-  margin-top: 25px;
-}
-
-/* blog layout */
-
-#blog {
-  width: 800px;
-  margin: 100px auto 0;
-}
-.blog-header {
-  width: 800px;
-  height: 100px;
-  background-color: darkslateblue;
-  margin-bottom: 50px;
-}
-.content {
-  width: 650px;
-  height: 500px;
-  margin-right: 25px;
-  margin-bottom: 25px;
-  background-color: darkslateblue;
-  float: left;
-}
 .avatar {
-  width: 125px;
+  width: 175px;
   height: 200px;
-  background-color: darkslateblue;
+  margin-left: 25px;
   float: left;
 }
 .byline {
-  width: 650px;
+  width: 600px;
   height: 50px;
-  background-color: darkslateblue;
-  margin-bottom: 100px;
+  margin: 25px 0 50px;
   float: left;
 }
 
-/* tennis styles */
-#tennis div {
-  box-sizing: border-box;
-}
+/* tennis court layout styles */
 #tennis {
-  background-color: darkgreen;
+  background-color: seagreen;
+}
+.court, .side, .back, .service {
+  border: 5px solid white;
+  background-color: mediumseagreen;
 }
 .court {
-  width: 410px;
+  width: 560px;
   display: flow-root;
-  border: 5px solid white;
-  margin: 50px auto;
+  margin: calc(50vh - 305px) auto;
 }
-.singles {
+.single {
   width: 300px;
   float: left;
-}
-.side, .top, .middle {
-  float: left;
-  background-color: green;
-  border: 5px solid white;
 }
 .side {
-  width: 50px;
+  width: 125px;
   height: 300px;
+  float: left;
 }
-.top {
+.back {
   width: 300px;
   height: 100px;
+  float: left;
 }
-.middle {
+.service {
   width: 150px;
   height: 200px;
+  float: left;
+}
+
+/* california case layout styles */
+body#california {
+  background-color: #333333;
+}
+.case {
+  width: calc((50px * 24) + 110px);
+  border: 2px solid whitesmoke;
+  margin: 25px;
+  padding: 25px;
+  display: flow-root;
+  margin: calc(50vh - (758px / 2)) auto;
+  background-color: #111111;
+}
+.eightbyseven {
+  width: calc((50px * 8) + 2px);
+  float: left;
+  border: 1px solid whitesmoke;
+}
+.midmar {
+  margin: 0 25px;
+}
+.twobythree, .twobytwo {
+  width: calc(50px * 2);
+  float: left;
+}
+.onebytwo {
+  width: 50px;
+  float: left;
+}
+.twobythree-r, .twobytwo-r, .onebytwo-r, .onebyone-r {
+  float: left;
+  border: 1px solid whitesmoke;
+}
+.twobythree-r {
+  width: 100px;
+  height: 300px;
+}
+.twobytwo-r {
+  width: 100px;
+  height: 200px;
+}
+.onebytwo-r {
+  width: 50px;
+  height: 200px;
+}
+.onebyone-r {
+  width: 50px;
+  height: 100px;
+}
+.onebyone-r:hover {
+  background-color: tomato;
+  cursor: pointer;
+}
+.tomato {
+  background-color: tomato;
+}
+.onebytwo-r:hover {
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+.blue {
+  background-color: dodgerblue;
+}
+.twobytwo-r:hover {
+  background-color: gold;
+  cursor: pointer;
+}
+.gold {
+  background-color: gold;
+}
+.twobythree-r:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.whitesmoke {
+  background-color: whitesmoke;
 }
