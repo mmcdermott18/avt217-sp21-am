@@ -6,38 +6,21 @@ body {
   margin: 0;
   height: 200vh;
 }
-.square {
+.red-square, .blue-square, .yellow-square {
   width: 200px;
   height: 200px;
   margin: calc(25vh - 100px) auto 0;
+  transition: all 1s ease;
+}
+.red-square {
   background-color: tomato;
-  transition: all 1s ease;
 }
-.square-circle {
-  border-radius: 50%;
-}
-.square:hover {
-  cursor: pointer;
-}
-.circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 100px auto;
+.blue-square {
   background-color: dodgerblue;
-  transition: all 1s ease;
+}
+.yellow-square {
+  background-color: gold;
 }
 .hidden {
   display: none;
-}
-.blue {
-  background-color: dodgerblue;
-}
-.purple {
-  background-color: rebeccapurple;
-}
-.grow {
-  width: 400px;
-  height: 400px;
-  margin: calc(50vh - 200px) auto;
 }

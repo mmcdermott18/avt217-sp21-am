@@ -1,29 +1,22 @@
 $(document).ready(function() {
-
-    // run function on initial page load
-    $('.square').click(function() {
-      $('.square').toggleClass('square-circle');
-      $('.circle').toggleClass('hidden');
-      // $('.square').toggleClass('grow');
-      // $('body').css('background-color', 'black');
+    var i = 1;
+    $(window).click(function() {
+      console.log(i);
+      if (i == 1) {
+        $('.red-square').addClass('hidden');
+        $('.blue-square').removeClass('hidden');
+        i = i + 1;
+        console.log('first click');
+      } else if (i == 2 ) {
+        $('.blue-square').addClass('hidden');
+        $('.yellow-square').removeClass('hidden');
+        i = i + 1;
+        console.log('second click');
+      } else {
+        $('.yellow-square').addClass('hidden');
+        $('.red-square').removeClass('hidden');
+        i = 1;
+        console.log('third click');
+      }
     });
-
-    // run function on resize of the window
-    $(window).resize(function() {
-      resize();
-    });
-
-    // run function on scroll of the window
-    $(window).scroll(function() {
-      scroll();
-    });
-
 });
-
-function resize() {
-  $('.square').addClass('purple');
-}
-
-function scroll() {
-  $('.square').removeClass('purple');
-}
